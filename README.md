@@ -1,3 +1,4 @@
+# Forked From
 # ngx-google-places-autocomplete
 This module is a wrapper for Google Places Autocomplete js library.
 
@@ -6,11 +7,11 @@ This module is a wrapper for Google Places Autocomplete js library.
 # Installation
 #### npm
 ```
-npm install ngx-google-places-autocomplete
+npm install @karve.it/ngx-google-places-autocomplete
 ```
 #### yarn
 ```
-yarn add ngx-google-places-autocomplete
+yarn add @karve.it/ngx-google-places-autocomplete
 ```
 # Integration
 1. Add google library in your index.html file : 
@@ -22,7 +23,7 @@ yarn add ngx-google-places-autocomplete
 # Usage
 1. Add a module into your application (as a rule app.module.ts)
 ```ts
-import { GooglePlaceModule } from "ngx-google-places-autocomplete";
+import { GooglePlaceModule } from "@karve.it/ngx-google-places-autocomplete";
 
 @NgModule({
     imports: [GooglePlaceModule, BrowserModule, FormsModule, ...],

@@ -12,6 +12,8 @@ declare let google: any;
 export class GooglePlaceDirective implements AfterViewInit {
     @Input('options') options: Options;
     @Output() onAddressChange: EventEmitter<Address> = new EventEmitter();
+    @Output() onTopSuggestionChanged: EventEmitter<Address> = new EventEmitter();
+
     private autocomplete: any;
     private eventListener: any;
     public place: Address;

@@ -10,6 +10,7 @@ export class Options {
     public strictBounds?: boolean;
     public origin?: LatLng;
     public location?: LatLng | LatLngLiteral;
+    public radius?: number;
 
     public constructor(opt?: Partial<Options>) {
         if (!opt)
