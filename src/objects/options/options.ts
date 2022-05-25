@@ -1,14 +1,16 @@
-import { LatLng } from '../latLng';
+import { LatLng, LatLngLiteral } from '../latLng';
 import { LatLngBounds } from "../latLngBounds";
 import { ComponentRestrictions } from "./componentRestrictions";
 
 export class Options {
-    public bounds: LatLngBounds;
-    public componentRestrictions: ComponentRestrictions;
+    public bounds?: LatLngBounds;
+    public componentRestrictions?: ComponentRestrictions;
     public types: string[];
-    public fields: string[];
-    public strictBounds: boolean;
-    public origin: LatLng;
+    public fields?: string[];
+    public strictBounds?: boolean;
+    public origin?: LatLng;
+    public location: LatLng | LatLngLiteral;
+
     public constructor(opt?: Partial<Options>) {
         if (!opt)
             return;
