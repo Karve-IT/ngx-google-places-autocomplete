@@ -9,7 +9,7 @@ export class Options {
     public fields?: string[];
     public strictBounds?: boolean;
     public origin?: LatLng;
-    public location: LatLng | LatLngLiteral;
+    public location?: LatLng | LatLngLiteral;
 
     public constructor(opt?: Partial<Options>) {
         if (!opt)
